@@ -14,7 +14,7 @@ val=document.getElementsByClassName('task-title');*/
 console.log(document.getElementsById('task-title').className);*/
 
 //let x=document.getElementById('task-title');/*val=document;
-val=document.all[2];
+/*val=document.all[2];
 val=document.all.length;
 val=document.body;
 val=document.domain;
@@ -472,12 +472,12 @@ function(e){
     isbn=document.getElementById('isbn').value;
     console.log(title,author,isbn);
     e.preventDefault();
-});*/
+});
 document.querySelector('#button').addEventListener('click',(e)=>{
     list=document.createElement('li');
     list.append(e.value);
     console.log(list);
-})
+})*/
 
 //x.style.color='grey';
 //x.textContent="hello";
@@ -805,7 +805,7 @@ const brad=new Person('brad',12);
 const kanchi=new Person('kanchi',22);
 
 console.log(brad);
-console.log(kanchi);-----------*/
+console.log(kanchi);
 
 function add(x,y){
     this.x=x;
@@ -818,3 +818,9 @@ function add(x,y){
 
 const add1=new add(2,5);
 console.log(add1.addnum);
+*/
+
+const label=document.querySelector('.label-class');
+label.innerText="hii";
+label.textContent="hello";
+label.innerHTML='<span style="color:red;">innerHtml</span>';
