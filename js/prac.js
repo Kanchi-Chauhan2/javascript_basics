@@ -9,9 +9,6 @@ val=document.forms[0];
 
 val=document.getElementsByClassName('task-title');*/
 
-const { render } = require("node-sass");
-
-
 /*console.log(document.getElementsById('task-title').id);
 console.log(document.getElementsById('task-title').className);*/
 
@@ -820,11 +817,13 @@ function add(x,y){
 
 const add1=new add(2,5);
 console.log(add1.addnum);
+
 */
 // This is how we can append changes to a label
 //1. Using textContent
 //2. Using innerText
 //3. Using innerHTML
+
 const label=document.querySelector('.label-class');
 label.innerText="hii";
 label.textContent="hello";
@@ -838,14 +837,26 @@ document.querySelector('li').innerHTML='<span style="color:green; font-weight:60
 
 const li=document.createElement('li');
 li.className='list-1';
-console.log(li.className);
 li.appendChild(document.createTextNode('hello world'));
 document.querySelector('ul').appendChild(li);
 
-// CREATING A LIST
+// CREATING A LINK
 
 const link=document.createElement('a');
 link.className='link-1';
-link.innerHTML='<span style="color:red;">X</span>';
+link.innerText='hello';
+link.href="https://www.geeksforgeeks.org"; 
 li.appendChild(link);
-document.querySelector('ul').appendChild(link);  
+document.querySelector('ul').appendChild(li);  
+console.log(li);
+
+document.querySelector('ul').addEventListener('mouseover',(e)=>{
+    let val;
+    val=e;
+    console.log(val);
+})
+
+document.querySelector('input').addEventListener('submit',(e)=>{
+    console.log(e.target.value);
+})
+//Saurabh shukla
